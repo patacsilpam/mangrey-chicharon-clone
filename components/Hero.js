@@ -9,7 +9,7 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 const Hero = ({
   listUser = [
     {
-      name: "Comillas La Paz Tarlac 2314 La Paz, Philippines",
+      name: "Comillas, La Paz Tarlac, Philippines",
       // number: "20",
       icon: "/assets/Icon/location.svg",
     },
