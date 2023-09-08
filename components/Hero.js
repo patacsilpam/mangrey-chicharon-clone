@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link as LinkScroll } from "react-scroll";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import {motion} from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
@@ -43,9 +43,15 @@ const Hero = ({
               <p className="text-black-500 lg:text-lg mt-4 mb-6">
                a plant-based oyster mushroom special chicharon, is a fresh take on a Filipino favorite. It's crispy, flavorful, and completely vegan, making it a great and environmentally friendly snack.
               </p>
+              <LinkScroll
+              activeClass="active"
+              to="feature"
+              spy={true}
+              smooth={true}>
               <ButtonPrimary> 
-                <Link href="#feature">Learn more</Link>
+                Learn more
               </ButtonPrimary>
+              </LinkScroll>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
