@@ -95,7 +95,7 @@ const Header = () => {
                   : " text-black-500 hover:text-[#968851] ")
               }
             >
-              Testimonial
+              Reviews
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
