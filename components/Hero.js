@@ -11,17 +11,17 @@ const Hero = ({
     {
       name: "Comillas, La Paz Tarlac, Philippines",
       // number: "20",
-      icon: "/assets/Icon/location.svg",
+      icon: "/assets/Icon/location-pin.svg",
     },
     {
-      name: "0963 708 1384",
+      name: "(+63) 963-7081-384",
       // number: "Free Shipping",
       icon: "/assets/Icon/call.svg",
     },
     {
       name: "Free Shipping",
       // number: "50",
-      icon: "/assets/Icon/location.svg",
+      icon: "/assets/Icon/free-delivery.svg",
     },
   ],
 }) => {
@@ -41,7 +41,7 @@ const Hero = ({
               Mang Rey's Mushroom Chicharon 
               </h1>
               <p className="text-black-500 lg:text-lg mt-4 mb-6">
-               a plant-based oyster mushroom special chicharon, is a fresh take on a Filipino favorite. It's crispy, flavorful, and completely vegan, making it a great and environmentally friendly snack.
+               a plant-based oyster mushroom special chicharon, a fresh take on a Filipino favorite. It's crispy, flavorful, and completely vegan, making it a great and environmentally friendly snack.
               </p>
               <LinkScroll
               activeClass="active"
@@ -80,9 +80,9 @@ const Hero = ({
             >
               <div className="flex mx-auto w-40 sm:w-auto">
                 <div className="flex items-center justify-center bg-brown-100 w-12 h-12 mr-6 rounded-full">
-                  {/* <img src={listUsers.icon} className="h-6 w-6" /> */}
+                  <img src={listUsers.icon} className="h-6 w-6" /> 
                 </div>
-                <div className="flex flex-col">
+                <div className="flex items-center justify-center">
                   <p className="text-xl text-black-600 font-bold">
                     {listUsers.number}
                   </p>
