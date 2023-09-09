@@ -1,17 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "LaslesVPN",
-  "short_name": "LaslesVPN",
+  "name": "Mang Rey's Mushroom Chicharon",
+  "short_name": "Mang Rey's Mushroom Chicharon",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
-  "theme_color": "#F53838",
-  "description": "LaslesVPN Best VPN For Privacy, Country and Cheapest.",
+  "theme_color": "#968851",
+  "description": "a plant-based oyster mushroom special chicharon, is a fresh take on a Filipino favorite. It's crispy, flavorful, and completely vegan, making it a great and environmentally friendly snack.",
   "icons": [
     {
-      "src": "/favicon/androig",
+      "src": "/assets/mangreylogo.webp",
       "sizes": "36x36",
-      "type": "image/png",
+      "type": "image/webp",
       "density": "0.75"
     },
     {
