@@ -152,7 +152,7 @@ const Pricing = () => {
             
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d246171.7865124804!2d120.5711588!3d15.407101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396c505a7da4e71%3A0xc49f30bd8220d5c6!2sMang%20Rey&#39;s%20Mushroom%20Chicharon!5e0!3m2!1sen!2sph!4v1694258858668!5m2!1sen!2sph"
-              className="w-full h-[700px] rounded" loading="lazy">
+              className="w-full h-screen rounded" loading="lazy">
               </iframe>
             </motion.div>
           </ScrollAnimationWrapper>
