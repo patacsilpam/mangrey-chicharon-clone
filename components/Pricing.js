@@ -34,50 +34,7 @@ const Pricing = () => {
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale : 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
-              >
-                <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
-                    src="/assets/mangreylogo.webp"
-                    width={145}
-                    height={165}
-                    alt="Free Plan"
-                  />
-                </div>
-                <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                  Free Plan
-                </p>
-                <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Encrypted Connection
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    No Traffic Logs
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Works on All Devices
-                  </li>
-                </ul>
-                <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                  <p className="text-2xl text-black-600 text-center mb-4 ">
-                    Free
-                  </p>
-                  <ButtonOutline>Select</ButtonOutline>
-                </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
+            {/*rremove*/}
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
@@ -125,6 +82,7 @@ const Pricing = () => {
               </div>
               </motion.div>
             </ScrollAnimationWrapper>
+            {/*rremove*/}
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
@@ -194,7 +152,7 @@ const Pricing = () => {
             
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d246171.7865124804!2d120.5711588!3d15.407101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396c505a7da4e71%3A0xc49f30bd8220d5c6!2sMang%20Rey&#39;s%20Mushroom%20Chicharon!5e0!3m2!1sen!2sph!4v1694258858668!5m2!1sen!2sph"
-              className="w-full h-[700px] rounded" loading="lazy" allowFullScreen="true">
+              className="w-full h-[700px] rounded" loading="lazy">
               </iframe>
             </motion.div>
           </ScrollAnimationWrapper>
