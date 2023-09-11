@@ -68,11 +68,11 @@ const Pricing = () => {
               <motion.div
                 key={index}
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-3xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale : 1.1,
                   transition: {
-                    duration: 1
+                    duration: 0.3
                   }
                 }}
               >
