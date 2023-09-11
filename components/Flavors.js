@@ -70,7 +70,7 @@ const Pricing = () => {
                 variants={scrollAnimation}
                 className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-3xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
-                  scale : 1.1,
+                  scale : 0.9,
                   transition: {
                     duration: 0.3
                   }
