@@ -99,12 +99,16 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            {/* <Link href="/">
+            {/* <Link href="https://www.facebook.com/profile.php?id=100092878066198">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-[#968851] transition-all">
                   ff
               </a>
-            </Link> */}
-            <ButtonOutline>Order now</ButtonOutline>
+            </Link> */} 
+            <ButtonOutline>
+              <Link href="https://www.facebook.com/profile.php?id=100092878066198" target="_blank">
+                 Order now
+              </Link>
+            </ButtonOutline>
           </div>
         </nav>
       </header>
