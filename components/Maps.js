@@ -15,7 +15,6 @@ const Flavors = () => {
       id="pricing"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-      
         <div className="flex flex-col w-full my-16">
           <ScrollAnimationWrapper>
             <motion.h3
@@ -28,10 +27,10 @@ const Flavors = () => {
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
-            <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
+            <motion.div className="sm:px-2 py-12 w-full xl:px-8 mt-16" variants={scrollAnimation}> 
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d246171.7865124804!2d120.5711588!3d15.407101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396c505a7da4e71%3A0xc49f30bd8220d5c6!2sMang%20Rey&#39;s%20Mushroom%20Chicharon!5e0!3m2!1sen!2sph!4v1694258858668!5m2!1sen!2sph"
-              className="w-full h-screen rounded-3xl" loading="lazy">
+              className="w-full rounded-3xl aspect-video" loading="lazy">
               </iframe>
             </motion.div>
           </ScrollAnimationWrapper>

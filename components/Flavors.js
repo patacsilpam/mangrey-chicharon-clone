@@ -77,7 +77,7 @@ const Pricing = () => {
                 }}
               >
                 <div className="">
-                  <div>
+                  {/* <div> */}
                     <Image 
                       src={item.image}
                       quality={100}
@@ -87,7 +87,7 @@ const Pricing = () => {
                       className="object-cover w-full h-full"
                       loading="lazy"
                     />
-                  </div>
+                  {/* </div> */}
                   <div>
                     <p className="p-3 text-sm md:text-lg">{item.flavor}</p>
                   </div>
