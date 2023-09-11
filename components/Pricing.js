@@ -13,31 +13,31 @@ const Pricing = () => {
   const flavors = [
     {
       flavor: "Classic Mushroom Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.png"
+      image: "/assets/flavors/sample-flavor.webp"
     },
     {
       flavor: "Cheese Mushroom Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.png"
+      image: "/assets/flavors/sample-flavor.webp"
     },
     {
       flavor: "Honey Butter Mushroom Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.png"
+      image: "/assets/flavors/sample-flavor.webp"
     },
     {
       flavor: "Salted Egg  Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.png"
+      image: "/assets/flavors/sample-flavor.webp"
     },
     {
       flavor: "BBQ Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.png"
+      image: "/assets/flavors/sample-flavor.webp"
     },
     {
       flavor: "Sour Cream Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.png"
+      image: "/assets/flavors/sample-flavor.webp"
     },
     {
       flavor: "Chili Garlic Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.png"
+      image: "/assets/flavors/sample-flavor.webp"
     }
   ]
   return (
@@ -63,7 +63,7 @@ const Pricing = () => {
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="">
-          <ScrollAnimationWrapper className="grid grid-cols-1 md:grid-cols-3 gap-7">
+          <ScrollAnimationWrapper className="grid grid-cols-1 md:grid-cols-3  gap-7">
             {flavors.map((item,index) => (
               <motion.div
                 key={index}
@@ -72,7 +72,7 @@ const Pricing = () => {
                 whileHover={{
                   scale : 1.1,
                   transition: {
-                    duration: .2
+                    duration: 1
                   }
                 }}
               >
@@ -84,7 +84,6 @@ const Pricing = () => {
                       width={100}
                       height={100}
                       layout="responsive"
-                      loading="lazy"
                       className="object-cover w-full h-full"
                     />
                   </div>
@@ -118,36 +117,6 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
             <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
-              {/* <Netflix className="h-18 w-auto" /> 
-              <Maps className="w-full h-auto" />
-                <img
-                src="/assets/Icon/amazon.png"
-                className="h-14 w-auto mt-4 lg:mt-2"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/netflix.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/reddit.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/discord.png"
-                className="h-14 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              <img
-                src="/assets/Icon/spotify.png"
-                className="h-12 w-auto mt-2 lg:mt-0"
-                alt=""
-              />
-              
-              */}
-              
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
