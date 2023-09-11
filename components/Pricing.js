@@ -10,7 +10,36 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
+  const flavors = [
+    {
+      flavor: "Classic Mushroom Chicharon 100g",
+      image: "/assets/flavors/sample-flavor.png"
+    },
+    {
+      flavor: "Cheese Mushroom Chicharon 100g",
+      image: "/assets/flavors/sample-flavor.png"
+    },
+    {
+      flavor: "Honey Butter Mushroom Chicharon 100g",
+      image: "/assets/flavors/sample-flavor.png"
+    },
+    {
+      flavor: "Salted Egg  Chicharon 100g",
+      image: "/assets/flavors/sample-flavor.png"
+    },
+    {
+      flavor: "BBQ Chicharon 100g",
+      image: "/assets/flavors/sample-flavor.png"
+    },
+    {
+      flavor: "Sour Cream Chicharon 100g",
+      image: "/assets/flavors/sample-flavor.png"
+    },
+    {
+      flavor: "Chili Garlic Chicharon 100g",
+      image: "/assets/flavors/sample-flavor.png"
+    }
+  ]
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
@@ -23,7 +52,7 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
             >
-              Choose Your Plan
+              Choose Your Flavor
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
@@ -33,12 +62,13 @@ const Pricing = () => {
               and cheerfully.
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            {/*rremove*/}
-            <ScrollAnimationWrapper className="flex justify-center">
+          <div className="">
+          <ScrollAnimationWrapper className="grid grid-cols-1 md:grid-cols-3 gap-7">
+            {flavors.map((item,index) => (
               <motion.div
+                key={index}
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale : 1.1,
                   transition: {
@@ -46,94 +76,25 @@ const Pricing = () => {
                   }
                 }}
               >
-              <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                <Image
-                  src="/assets/mangreylogo.webp"
-                  width={145}
-                  height={165}
-                  alt="Standard Plan"
-                />
-              </div>
-              <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Standard Plan{" "}
-              </p>
-              <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
-                </li>
-                <li className="relative check custom-list my-2">
-                  Encrypted Connection
-                </li>
-                <li className="relative check custom-list my-2">
-                  No Traffic Logs
-                </li>
-                <li className="relative check custom-list my-2">
-                  Works on All Devices
-                </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
-                </li>
-              </ul>
-              <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $9 <span className="text-black-500">/ mo</span>
-                </p>
-                <ButtonOutline>Select</ButtonOutline>
-              </div>
+                <div className="">
+                  <div>
+                    <Image 
+                      src={item.image}
+                      quality={100}
+                      width={100}
+                      height={100}
+                      layout="responsive"
+                      loading="lazy"
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div>
+                    <p className="p-3 text-sm md:text-lg">{item.flavor}</p>
+                  </div>
+                </div>
               </motion.div>
-            </ScrollAnimationWrapper>
-            {/*rremove*/}
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale : 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
-              >
-              <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                <Image
-                  src="/assets/mangreylogo.webp"
-                  width={145}
-                  height={165}
-                  alt="Premium Plan"
-                />
-              </div>
-              <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
-                Premium Plan{" "}
-              </p>
-              <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
-                </li>
-                <li className="relative check custom-list my-2">
-                  Encrypted Connection
-                </li>
-                <li className="relative check custom-list my-2">
-                  No Traffic Logs
-                </li>
-                <li className="relative check custom-list my-2">
-                  Works on All Devices
-                </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
-                </li>
-                <li className="relative check custom-list my-2">
-                  Get New Features{" "}
-                </li>
-              </ul>
-              <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                <p className="text-2xl text-black-600 text-center mb-4 ">
-                  $12 <span className="text-black-500">/ mo</span>
-                </p>
-
-                <ButtonOutline>Select</ButtonOutline>
-              </div>
-              </motion.div>
-            </ScrollAnimationWrapper>
+            ))}
+          </ScrollAnimationWrapper>
           </div>
         </div>
         <div className="flex flex-col w-full my-16">
@@ -149,7 +110,6 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
             <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
-            
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d246171.7865124804!2d120.5711588!3d15.407101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396c505a7da4e71%3A0xc49f30bd8220d5c6!2sMang%20Rey&#39;s%20Mushroom%20Chicharon!5e0!3m2!1sen!2sph!4v1694258858668!5m2!1sen!2sph"
               className="w-full h-screen rounded" loading="lazy">
