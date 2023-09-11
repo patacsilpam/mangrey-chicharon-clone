@@ -78,15 +78,12 @@ const Hero = ({
               custom={{duration: 2 + index}}
               variants={scrollAnimation}
             >
-              <div className="flex mx-auto w-40 sm:w-auto">
-                <div className="flex items-center justify-center bg-brown-100 w-12 h-12 mr-6 rounded-full">
+              <div className="flex mx-auto w-40  sm:w-auto">
+                <div className="flex items-center justify-center bg-brown-100 w-12 h-12 mr-3  rounded-full">
                   <img src={listUsers.icon} className="h-6 w-6" /> 
                 </div>
-                <div className="flex items-center justify-center">
-                  <p className="text-xl text-black-600 font-bold">
-                    {listUsers.number}
-                  </p>
-                  <p className="text-lg text-black-500">{listUsers.name}</p>
+                <div className="flex items-center justify-start">
+                  <p className="text-sm md:text-lg text-black-500 ">{listUsers.name}</p>
                 </div>
               </div>
             </motion.div>
