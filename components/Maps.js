@@ -9,92 +9,13 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
 const Pricing = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-  const flavors = [
-    {
-      flavor: "Classic Mushroom Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.webp"
-    },
-    {
-      flavor: "Cheese Mushroom Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.webp"
-    },
-    {
-      flavor: "Honey Butter Mushroom Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.webp"
-    },
-    {
-      flavor: "Salted Egg  Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.webp"
-    },
-    {
-      flavor: "BBQ Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.webp"
-    },
-    {
-      flavor: "Sour Cream Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.webp"
-    },
-    {
-      flavor: "Chili Garlic Chicharon 100g",
-      image: "/assets/flavors/sample-flavor.webp"
-    }
-  ]
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
       id="pricing"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-        <div className="flex flex-col w-full">
-          <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
-            >
-              Choose Your Flavor
-            </motion.h3>
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >
-              Let's choose the package that is best for you and explore it happily
-              and cheerfully.
-            </motion.p>
-          </ScrollAnimationWrapper>
-          <div className="">
-          <ScrollAnimationWrapper className="grid grid-cols-1 md:grid-cols-3  gap-7">
-            {flavors.map((item,index) => (
-              <motion.div
-                key={index}
-                variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded py-4 px-6 lg:px-12 xl:px-20"
-                whileHover={{
-                  scale : 1.1,
-                  transition: {
-                    duration: 1
-                  }
-                }}
-              >
-                <div className="">
-                  <div>
-                    <Image 
-                      src={item.image}
-                      quality={100}
-                      width={100}
-                      height={100}
-                      layout="responsive"
-                      className="object-cover w-full h-full"
-                    />
-                  </div>
-                  <div>
-                    <p className="p-3 text-sm md:text-lg">{item.flavor}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </ScrollAnimationWrapper>
-          </div>
-        </div>
+      
         <div className="flex flex-col w-full my-16">
           <ScrollAnimationWrapper>
             <motion.h3
@@ -119,7 +40,8 @@ const Pricing = () => {
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
-        <div className="flex flex-col w-full my-16" id="testimoni">
+
+        {/* <div className="flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -156,7 +78,7 @@ const Pricing = () => {
                 ></div>
             </motion.div>
           </ScrollAnimationWrapper>
-        </div>
+        </div> */}
       </div>
     </div>
   );
