@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
 import Testimoni from "./Testimoni";
+import Maps from "../components/Maps";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline.";
 import { motion } from "framer-motion";
@@ -95,6 +96,7 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           </div>
         </div>
+        <Maps/> 
         {/* <div className="flex flex-col w-full my-16">
           <ScrollAnimationWrapper>
             <motion.h3
