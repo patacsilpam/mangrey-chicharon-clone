@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
-const Pricing = () => {
+const Flavors = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
     <div
@@ -45,4 +45,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Flavors;
