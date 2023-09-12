@@ -26,44 +26,50 @@ const Footer = () => {
           <p className="text-gray-400">©{new Date().getFullYear()} Mang Rey's Mushroom Chicharon</p>
         </div>
         <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
+          <p className="text-black-600 mb-4 font-medium text-lg">Our Flavors</p>
           <ul className="text-black-500 ">
-            <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
-              Lorem Ipsum{" "}
-            </li>
-            <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
-              Lorem Ipsum{" "}
-            </li>
-            <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
-              Lorem Ipsum{" "}
-            </li>
-            <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
-              Lorem Ipsum{" "}
-            </li>
-          </ul>
+              <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
+                Classic{" "}
+              </li>
+              <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
+                Cheese{" "}
+              </li>
+              <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
+                Honey Butter{" "}
+              </li>
+              <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
+                Salted Egg{" "}
+              </li>
+              <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
+                BBQ{" "}
+              </li>
+              <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
+                Sour Cream{" "}
+              </li>
+              <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
+                Chilli Garlic{" "}
+              </li>
+            </ul>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
+        <p className="text-black-600 mb-4 font-medium text-lg">Partnerships</p>
           <ul className="text-black-500">
             <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
-              Lorem Ipsum{" "}
+              For Resellers{" "}
             </li>
             <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
-            Lorem Ipsum{" "}
-            </li>
-            <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
-              Lorem Ipsum{" "}
+              For Distributors{" "}
             </li>
           </ul>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
-          <p className="text-black-600 mb-4 font-medium text-lg">Earn Money</p>
-          <ul className="text-black-500">
+          <p className="text-black-600 mb-4 font-medium text-lg">Socials</p>
+          <ul className="text-black-500 ">
             <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
-              Affiliate{" "}
+              Facebook{" "}
             </li>
             <li className="my-2 hover:text-[#968851]  cursor-pointer transition-all">
-              Become Partner{" "}
+              Tiktok{" "}
             </li>
           </ul>
         </div>

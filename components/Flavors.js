@@ -68,16 +68,16 @@ const Pricing = () => {
               <motion.div
                 key={index}
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-3xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center bg-white-100 border-2 border-[#968851] rounded-3xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
-                  scale : 1.1,
+                  scale : 0.9,
                   transition: {
                     duration: 0.3
                   }
                 }}
               >
                 <div className="">
-                  <div>
+                  {/* <div> */}
                     <Image 
                       src={item.image}
                       quality={100}
@@ -87,7 +87,7 @@ const Pricing = () => {
                       className="object-cover w-full h-full"
                       loading="lazy"
                     />
-                  </div>
+                  {/* </div> */}
                   <div>
                     <p className="p-3 text-sm md:text-lg">{item.flavor}</p>
                   </div>
@@ -123,9 +123,9 @@ const Pricing = () => {
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                   <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    Order Now and <br /> Get Special Features!
+                     Grab your <span className="font-bold text-[#968851]">Special Chicharon</span> now!
                   </h5>
-                  <p>Let's subscribe with us and find the fun.</p>
+                  <p> Order now and experience the taste of Mang Rey's Special Mushroom Chicharon. 🛒</p>
                 </div>
                 <ButtonPrimary>Order Now</ButtonPrimary>
               </div>
