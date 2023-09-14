@@ -58,8 +58,7 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
-              Let's choose the package that is best for you and explore it happily
-              and cheerfully.
+              Choose your flavor and unlock a world of taste sensations. Take action now and let your cravings lead the way!{""}
             </motion.p>
           </ScrollAnimationWrapper>
           <div className="">
@@ -68,7 +67,7 @@ const Pricing = () => {
               <motion.div
                 key={index}
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center bg-white-100 border-2 border-[#968851] rounded-3xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center bg-white-100 border-2 border-gray-500 rounded-3xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale : 0.9,
                   transition: {
