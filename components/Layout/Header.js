@@ -105,7 +105,7 @@ const Header = () => {
               </a>
             </Link> */} 
             <ButtonOutline>
-              <Link href="https://www.facebook.com/profile.php?id=100092878066198" target="_blank">
+              <Link href="https://www.facebook.com/profile.php?id=100092878066198" target="_blank" >
                  Order now
               </Link>
             </ButtonOutline>
